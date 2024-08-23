@@ -1,7 +1,7 @@
-import React from 'react'
-
-export const Home = () => {
+const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="bg-black h-dvh w-lvw grid grid-cols-12 grid-rows-12 "></div>
+  );
+};
+
+export default Home;

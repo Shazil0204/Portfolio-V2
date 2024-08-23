@@ -1,7 +1,5 @@
-import React from 'react'
-
 export const About = () => {
   return (
-    <div>About</div>
+    <div className='h-dvh w-lvw bg-blue-700'>About</div>
   )
 }

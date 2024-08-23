@@ -1,7 +1,5 @@
-import React from 'react'
-
 export const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className='h-dvh w-lvw bg-red-700'>Contact</div>
   )
 }
