@@ -21,5 +21,10 @@ export const Greeting = () => {
     setGreeting(getGreeting());
   }, []);
 
-  return <div>{greeting}</div>;
+  return (
+
+    <div className="bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(18,255,255,0.5)]">
+      {greeting}
+    </div>
+  );
 };

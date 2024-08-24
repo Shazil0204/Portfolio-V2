@@ -7,7 +7,7 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ sections }) => (
-  <nav className="flex justify-center fixed w-lvw font-matemasie">
+  <nav className="flex justify-center fixed w-lvw font-matemasie text-xs z-[999]">
     <ul className="flex p-4 box-border bg-white/30 backdrop-blur-sm border border-white/20 rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">
       {sections.map((section) => (
         <li
