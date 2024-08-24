@@ -1,7 +1,7 @@
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navigation/Navbar";
 import { About } from "./Components/Pages/About";
 import { Contact } from "./Components/Pages/Contact";
-import Home from "./Components/Pages/Home";
+import Home from "./Components/Pages/Home/Home";
 import { Skill } from "./Components/Pages/Skill";
 
 const sections = [
