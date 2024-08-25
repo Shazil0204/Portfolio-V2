@@ -5,11 +5,10 @@ import { Portfolio_Overview } from "./Portfolio_Overview";
 
 // I will make this flex
 const Home = () => {
-
   const SmoothSrollContact = "Contact";
 
   return (
-    <div className="font-new-amsterdam text-2xl pt-20 lg:p-20">
+    <div className="font-new-amsterdam text-2xl pt-20 lg:p-20 drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">
       <div className="w-full text-center lg:text-4xl underline underline-offset-2">
         <Greeting />
       </div>
@@ -33,7 +32,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="w-full p-4 md:w-1/2">
+        <div className="w-full p-4 md:w-1/2 flex 2xl:block">
           <img src="./vite.svg" className="w-full h-auto" alt="" />
         </div>
       </div>

@@ -1,13 +1,13 @@
 import Navbar from "./Components/Navigation/Navbar";
 import { About } from "./Components/Pages/About";
 import { Contact } from "./Components/Pages/Contact";
+import { Future } from "./Components/Pages/Future";
 import Home from "./Components/Pages/Home/Home";
-import { Skill } from "./Components/Pages/Skill";
 
 const sections = [
   { id: "Shiz-Portfolio", element: <Home /> },
   { id: "About", element: <About /> },
-  { id: "Skill", element: <Skill /> },
+  { id: "Future", element: <Future /> },
   { id: "Contact", element: <Contact /> },
 ];
 

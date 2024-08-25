@@ -12,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ sections }) => (
       {sections.map((section) => (
         <li
           key={section.id}
-          className="mx-3.5 cursor-pointer hover:border-b-2 hover:border-r-2"
+          className="mx-3.5 cursor-pointer hover:border-b-2 hover:border-r-2 drop-shadow-[0_5px_5px_rgba(0,0,0,1)]"
         >
           <Link to={section.id} smooth={true} duration={500}>
             {section.id.charAt(0).toUpperCase() + section.id.slice(1)}
