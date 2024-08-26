@@ -15,7 +15,7 @@ export const Skill = () => {
   return (
     <>
       <div className="w-full p-1 bg-black/25"></div>
-      <div className="min-h-screen w-full flex flex-col font-edu-vic lg:px-20 p-2 drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">
+      <div className="min-h-screen w-full flex flex-col font-edu-vic lg:px-20 p-2 bg-gradient-to-br from-gray-900 to-gray-800 ">
         <div className="xl:flex flex-grow mt-16 gap-2 space-y-2 xl:space-y-0 md:text-xl xl:text-2xl ">
           <div className="order-1 xl:order-2 w-full flex-grow p-2 text-justify">
             <h1 className="left-0 w-full text-center text-4xl font-bold">
@@ -100,7 +100,7 @@ export const Skill = () => {
               </div>
               <div className="flex flex-col text-center justify-center border-2 border-white/25 bg-white/25 rounded-lg gap-4 py-5 drop-shadow-[0_5px_5px_rgba(0,0,0,1)] hover:scale-105 hover:text-green-500 hover:-rotate-6 duration-100">
                 <div className="h-2/5">
-                  <SiDotnet    className="w-full mb-3 h-32 p-4" />
+                  <SiDotnet className="w-full mb-3 h-32 p-4" />
                 </div>
                 <h3 className="underline underline-offset-2 h-1/5">ASP.NET</h3>
                 <p className="font-mono h-2/5">

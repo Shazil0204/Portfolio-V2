@@ -41,7 +41,10 @@ export const InfinitySlider = () => {
     <>
       <div className="w-full p-1 bg-black/25"></div>
       <main>
-        <div className="slider" style={sliderStyle}>
+        <div
+          className="slider  drop-shadow-[0_5px_5px_rgba(0,0,0,1)]"
+          style={sliderStyle}
+        >
           <div className="list">
             {icons.map(({ Component, color }, index) => (
               <div key={index} className="item" style={itemStyles[index]}>
