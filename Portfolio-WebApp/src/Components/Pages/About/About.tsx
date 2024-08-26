@@ -1,9 +1,11 @@
-import { Project } from "./Project";
+import ThreeDProject from "./3dProjects";
+import { InfinitySlider } from "./InfinitySlider";
 import { Skill } from "./Skill";
 
 export const About = () => {
   return (
     <>
+      <div className="w-full p-1 bg-black/25"></div>
       <div className="min-h-screen w-full flex flex-col p-2 drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">
         <div className="xl:flex flex-grow mt-16 gap-2 space-y-2 xl:space-y-0 md:text-xl xl:text-2xl ">
           <div className="order-1 xl:order-2 w-full xl:w-3/ 5 flex-grow p-2 text-justify">
@@ -95,7 +97,8 @@ export const About = () => {
         </div>
       </div>
       <Skill />
-      <Project />
+      <InfinitySlider/>
+      <ThreeDProject />
     </>
   );
 };

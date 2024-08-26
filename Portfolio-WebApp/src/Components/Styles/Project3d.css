@@ -1,0 +1,83 @@
+.banner3D {
+  width: 100%;
+  min-height: 100vh; /* Adjusts to content but ensures full screen height on large screens */
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20vh; /* Adds space for content below */
+}
+
+.slider3D {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun3D 20s linear infinite;
+  z-index: 2;
+}
+
+@keyframes autoRun3D {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.item3D {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+    translateZ(550px);
+}
+
+.item3D img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1023px) {
+  .banner3D {
+    padding-bottom: 10vh; /* Adjust padding to make content more compact */
+    min-height: 75vh;
+  }
+
+  .slider3D {
+    top: 100px;
+    width: 160px;
+    height: 200px;
+    left: calc(50% - 80px);
+  }
+
+  .slider3D .item3D {
+    transform: 
+      rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+      translateZ(300px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner3D {
+    padding-bottom: 5vh; /* Further reduce padding on smaller screens */
+    min-height: 50vh;
+  }
+  
+  .slider3D {
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    left: calc(50% - 50px);
+  }
+
+  .slider3D .item3D {
+    transform: 
+      rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+      translateZ(180px);
+  }
+}
