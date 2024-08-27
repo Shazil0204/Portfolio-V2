@@ -1,7 +1,5 @@
 import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa";
 export const Contact = () => {
-  
-  const style = "flex items-center space-x-4";
 
   return (
     <>
@@ -22,7 +20,7 @@ export const Contact = () => {
           {/* Contact Information */}
           <div className="mt-10 space-y-6">
             {/* Email */}
-            <div className={style}>
+            <div className="flex items-center space-x-4">
               <FaEnvelope className="text-2xl text-blue-400" />
               <span className="text-xl text-gray-300">
                 Email:{" "}
@@ -35,7 +33,7 @@ export const Contact = () => {
               </span>
             </div>
             {/* Phone */}
-            <div className={style}>
+            <div className="flex items-center space-x-4">
               <FaPhone className="text-2xl text-green-400" />
               <span className="text-xl text-gray-300">
                 Phone:{" "}
