@@ -37,7 +37,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="w-full p-4 md:w-1/3 flex 2xl:block">
+          <div className="w-full h-[32rem] p-4 md:w-1/3 flex items-center 2xl:block">
             <img src="./self-removebg.png" className="w-full h-auto" alt="" />
           </div>
         </div>
