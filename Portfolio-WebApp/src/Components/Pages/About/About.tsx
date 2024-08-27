@@ -48,10 +48,14 @@ export const About = () => {
                 <div className="font-serif">
                   I recently completed H2 at ZBC Ringsted, achieving A great
                   result. This reflects my dedication to learning and applying
-                  complex concepts effectively.
-                  <button className="w-full my-5 border-2 border-white/25 rounded-lg backdrop-blur-sm bg-white/10 p-2 font-bold uppercase hover:bg-white/50 hover:scale-95 duration-100">
+                  complex concepts effectively. {" "}
+                  <a
+                    href="./H2-result.pdf"
+                    download
+                    className="w-full my-5 font-bold uppercase underline underline-offset-2"
+                  >
                     see my result for H2
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="flex-1">

@@ -100,7 +100,7 @@ export const Future = () => {
                   payments and fund transfers based on user-defined rules.
                 </p>
                 <a
-                  href="https://github.com/your-github-profile/offline-finance-management"
+                  href="https://github.com/Shazil0204/offline-finance-management"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline mt-4 block"
@@ -120,7 +120,7 @@ export const Future = () => {
                   or groups, improving communication and task management.
                 </p>
                 <a
-                  href="https://github.com/your-github-profile/construction-management"
+                  href="https://github.com/Shazil0204/construction-management"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline mt-4 block"

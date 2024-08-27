@@ -28,9 +28,13 @@ const Home = () => {
                     SmoothSrollContact.slice(1)}
                 </Link>
               </button>
-              <button className="w-1/3 h-12 bg-white/30 border border-white/50 rounded-lg">
+              <a
+                href="./Shazil_Shahid_Resume.pdf"
+                download
+                className="w-1/3 h-12 bg-white/30 border border-white/50 rounded-lg flex justify-center items-center"
+              >
                 Download my CV
-              </button>
+              </a>
             </div>
           </div>
           <div className="w-full p-4 md:w-1/2 flex 2xl:block">
