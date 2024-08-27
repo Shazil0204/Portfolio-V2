@@ -12,52 +12,52 @@ import "../../Styles/Slider.css"; // Import your slider CSS file if needed
 const icons = [
   {
     Component: SiCsharp,
-    link: "https://github.com/Shazil0204/repo1",
+    link: "https://github.com/Shazil0204/Stonehenge",
     color: "text-green-600",
   }, // C# icon with green color
   {
     Component: FaHtml5,
-    link: "https://github.com/yourusername/repo2",
+    link: "https://github.com/Shazil0204/Portfolio-V2",
     color: "text-red-600",
   }, // HTML5 icon with red color
   {
     Component: FaCss3Alt,
-    link: "https://github.com/yourusername/repo3",
+    link: "https://github.com/Shazil0204/CSS-Only",
     color: "text-blue-600",
   }, // CSS3 icon with blue color
   {
     Component: FaJs,
-    link: "https://github.com/yourusername/repo4",
+    link: "https://github.com/Shazil0204/H2-JavaScript",
     color: "text-yellow-400",
   }, // JavaScript icon with yellow color
   {
     Component: FaReact,
-    link: "https://github.com/yourusername/repo5",
+    link: "https://github.com/Shazil0204/Portfolio-V2",
     color: "text-blue-400",
   }, // React icon with light blue color
   {
     Component: SiDotnet,
-    link: "https://github.com/yourusername/repo6",
+    link: "https://github.com/Shazil0204/Nordic-Nest",
     color: "text-purple-600",
   }, // .NET icon with purple color
   {
     Component: SiTailwindcss,
-    link: "https://github.com/yourusername/repo7",
+    link: "https://github.com/Shazil0204/Portfolio-V2",
     color: "text-blue-300",
   }, // Tailwind CSS icon with cyan color
   {
     Component: SiMicrosoftsqlserver,
-    link: "https://github.com/yourusername/repo8",
+    link: "https://github.com/Shazil0204/Nordic-Nest",
     color: "text-red-800",
   }, // MSSQL icon with dark red color
   {
     Component: SiMysql,
-    link: "https://github.com/yourusername/repo9",
+    link: "https://github.com/Shazil0204/Nordic-Nest",
     color: "text-blue-500",
   }, // MySQL icon with blue color
   {
     Component: FaBootstrap,
-    link: "https://github.com/yourusername/repo10",
+    link: "https://github.com/Shazil0204/Nordic-Nest",
     color: "text-purple-800",
   }, // Bootstrap icon with dark purple color
 ];
