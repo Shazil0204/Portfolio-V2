@@ -12,7 +12,7 @@ import "../../Styles/Slider.css"; // Import your slider CSS file if needed
 const icons = [
   {
     Component: SiCsharp,
-    link: "https://github.com/Shazil0204/Stonehenge",
+    link: "https://github.com/Shazil0204/H1-Programmering",
     color: "text-green-600",
   }, // C# icon with green color
   {
