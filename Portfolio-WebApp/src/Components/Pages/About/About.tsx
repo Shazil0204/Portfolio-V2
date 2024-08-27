@@ -7,8 +7,8 @@ export const About = () => {
     <>
       <div className="w-full p-1 bg-black/25"></div>
       <div className="min-h-screen w-full flex flex-col p-2 bg-gradient-to-br from-gray-900 to-gray-800">
-        <div className="xl:flex flex-grow mt-16 gap-2 space-y-2 xl:space-y-0 md:text-xl xl:text-2xl ">
-          <div className="order-1 xl:order-2 w-full xl:w-3/ 5 flex-grow p-2 text-justify">
+        <div className="mt-16 gap-2 space-y-2 xl:space-y-0 md:text-xl xl:text-2xl ">
+          <div className="order-1 xl:order-2 w-full flex-grow p-2 text-justify">
             <div className="left-0 w-full text-center font-edu-vic text-4xl drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">
               About me
             </div>
@@ -48,13 +48,13 @@ export const About = () => {
                 <div className="font-serif">
                   I recently completed H2 at ZBC Ringsted, achieving A great
                   result. This reflects my dedication to learning and applying
-                  complex concepts effectively. {" "}
+                  complex concepts effectively.{" "}
                   <a
                     href="./H2-result.pdf"
                     download
                     className="w-full my-5 font-bold uppercase underline underline-offset-2"
                   >
-                    see my result for H2
+                    Download my result for H2
                   </a>
                 </div>
               </div>
@@ -91,10 +91,15 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <div className="order-2 flex justify-center xl:order-1 w-full xl:w-2/5 flex-grow">
+          <div className="order-2 flex justify-center xl:order-1 w-full flex-grow">
             <img
-              src="./vite.svg"
-              className="h-[32rem] xl:h-full w-auto p-2"
+              src="./H2-result.png"
+              className="hidden xl:block xl:h-[50rem] w-auto p-2"
+              alt=""
+            />
+            <img
+              src="./H2-result-mobile.png"
+              className="h-[32rem] xl:hidden w-auto p-2"
               alt=""
             />
           </div>

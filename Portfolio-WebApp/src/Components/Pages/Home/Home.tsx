@@ -13,7 +13,7 @@ const Home = () => {
         <div className="w-full text-center lg:text-4xl underline underline-offset-2">
           <Greeting />
         </div>
-        <div className="md:flex w-full min-h-screen">
+        <div className="md:flex w-full justify-between">
           <div className="w-full md:w-1/2 text-center pt-10 space-y-10">
             <div className="text-6xl">
               <Introduction />
@@ -37,8 +37,8 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="w-full p-4 md:w-1/2 flex 2xl:block">
-            <img src="./vite.svg" className="w-full h-auto" alt="" />
+          <div className="w-full p-4 md:w-1/3 flex 2xl:block">
+            <img src="./self-removebg.png" className="w-full h-auto" alt="" />
           </div>
         </div>
       </div>
