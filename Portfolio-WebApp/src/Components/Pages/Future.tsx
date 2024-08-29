@@ -112,7 +112,7 @@ export const Future = () => {
               {/* Project 2 */}
               <div className="bg-gray-800 p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-white">
-                  Construction Management Website
+                  Employee Management Website
                 </h3>
                 <p className="text-gray-400 mt-2">
                   This project aims to create a platform where managers can
@@ -120,7 +120,7 @@ export const Future = () => {
                   or groups, improving communication and task management.
                 </p>
                 <a
-                  href="https://github.com/Shazil0204/construction-management"
+                  href="https://github.com/Shazil0204/Employee-management"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline mt-4 block"
