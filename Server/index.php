@@ -5,11 +5,11 @@ header('Access-Control-Allow-Methods: GET, POST, OPTIONS'); // Allow specific me
 header('Access-Control-Allow-Headers: Content-Type'); // Allow specific headers
 
 // Database connection details
-$servername = "localhost";
-$port = "3309"; // Use the port number specified
-$username = "root";
-$password = "50125223@MySQL"; // Replace with your root password
-$dbname = "ClientIP"; // Replace with your actual database name
+$servername = "192.168.1.249";
+$port = "3306"; 
+$username = ""; // can't show here
+$password = ""; // can't show here 
+$dbname = "ClientIP"; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
@@ -21,23 +21,41 @@ if ($conn->connect_error) {
 
 function getClientIp() {
     $ipaddress = '';
-    if (isset($_SERVER['HTTP_CLIENT_IP'])) {
+
+    // Check if HTTP_CLIENT_IP is set
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
         $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
-    } elseif (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    } elseif (isset($_SERVER['HTTP_X_FORWARDED'])) {
+    }
+    // Check if HTTP_X_FORWARDED_FOR is set and handle comma-separated IPs
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ipList = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+        $ipaddress = trim($ipList[0]); // Get the first IP from the list
+    }
+    // Check if HTTP_X_FORWARDED is set
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED'])) {
         $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
-    } elseif (isset($_SERVER['HTTP_X_CLUSTER_CLIENT_IP'])) {
+    }
+    // Check if HTTP_X_CLUSTER_CLIENT_IP is set
+    elseif (!empty($_SERVER['HTTP_X_CLUSTER_CLIENT_IP'])) {
         $ipaddress = $_SERVER['HTTP_X_CLUSTER_CLIENT_IP'];
-    } elseif (isset($_SERVER['HTTP_FORWARDED_FOR'])) {
+    }
+    // Check if HTTP_FORWARDED_FOR is set
+    elseif (!empty($_SERVER['HTTP_FORWARDED_FOR'])) {
         $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
-    } elseif (isset($_SERVER['HTTP_FORWARDED'])) {
+    }
+    // Check if HTTP_FORWARDED is set
+    elseif (!empty($_SERVER['HTTP_FORWARDED'])) {
         $ipaddress = $_SERVER['HTTP_FORWARDED'];
-    } elseif (isset($_SERVER['REMOTE_ADDR'])) {
+    }
+    // Fall back to REMOTE_ADDR if none of the above headers are set
+    elseif (!empty($_SERVER['REMOTE_ADDR'])) {
         $ipaddress = $_SERVER['REMOTE_ADDR'];
-    } else {
+    }
+    // Default to 'UNKNOWN' if no IP address is found
+    else {
         $ipaddress = 'UNKNOWN';
     }
+
     return $ipaddress;
 }
 
