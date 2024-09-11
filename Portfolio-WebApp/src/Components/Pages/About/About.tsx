@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <>
       <div className="w-full p-1 bg-black/25"></div>
-      <div className="min-h-screen w-full flex flex-col p-2 bg-gradient-to-br from-gray-900 to-gray-800">
+      <div className="min-h-screen w-full flex flex-col p-2 px-5 md:px-20 lg:px-32 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="mt-16 gap-2 space-y-2 xl:space-y-0 md:text-xl xl:text-2xl ">
           <div className="order-1 xl:order-2 w-full flex-grow p-2 text-justify">
             <div className="left-0 w-full text-center font-edu-vic text-4xl drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">
@@ -37,11 +37,8 @@ export const About = () => {
             <div className="flex gap-2">
               <div className="w-3/4 rounded-full my-2 p-[0.1rem] bg-gradient-to-r from-black to-[#0c4b54]"></div>
             </div>
-            <div className="xl:flex w-full gap-5 mt-5 text-justify">
-              <div className="flex-1">
-                <div className="flex">
-                  <div className="w-full rounded-full my-2 p-[0.1rem] bg-gradient-to-r from-black to-white/25"></div>
-                </div>
+            <div className="xl:flex w-full gap-5 mt-5 text-justify space-y-5 xl:space-y-0">
+              <div className="flex-1 bg-gradient-to-br from-white/10 to-transparent rounded-lg p-2 space-y-5">
                 <div className="uppercase p-2 font-edu-vic text-center font-extrabold">
                   Academic Achievements
                 </div>
@@ -58,10 +55,7 @@ export const About = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex-1">
-                <div className="flex">
-                  <div className="w-full rounded-full my-2 p-[0.1rem] bg-gradient-to-r from-white/25 to-white/25"></div>
-                </div>
+              <div className="flex-1 bg-gradient-to-br from-white/10 to-transparent rounded-lg p-2 space-y-5">
                 <div className="uppercase p-2 font-edu-vic text-center font-extrabold">
                   Reliability and Consistency
                 </div>
@@ -74,10 +68,7 @@ export const About = () => {
                   management.
                 </div>
               </div>
-              <div className="flex-1">
-                <div className="flex ">
-                  <div className="w-full rounded-full my-2 p-[0.1rem] bg-gradient-to-r from-white/25 to-black"></div>
-                </div>
+              <div className="flex-1 bg-gradient-to-br from-white/10 to-transparent rounded-lg p-2 space-y-5">
                 <div className="uppercase p-2 font-edu-vic text-center font-extrabold">
                   Problem-Solving/Adaptability
                 </div>
@@ -99,7 +90,7 @@ export const About = () => {
             />
             <img
               src="./H2-result-mobile.png"
-              className="h-[32rem] xl:hidden w-auto p-2"
+              className="h-auto xl:hidden w-auto p-2"
               alt=""
             />
           </div>
