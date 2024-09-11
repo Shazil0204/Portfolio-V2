@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     // Fetch data from PHP script
     // fetch("http://localhost/index.php") // Update the URL as necessary
-    fetch("../../../../../Server/index.php") // Update the URL as necessary
+    fetch("https://portfolioapi.techtonic.dk/") // Update the URL as necessary
       .then((response) => response.json())
       .then((data) => {
         setTotalIps(data); // Assuming data is just a number in this case
@@ -24,7 +24,7 @@ const Home = () => {
   }, []);
 
   return (
-    <> 
+    <>
       <div className="font-new-amsterdam text-2xl pt-20 lg:p-20 drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">
         <div className="w-full text-center lg:text-4xl underline underline-offset-2">
           <Greeting />
